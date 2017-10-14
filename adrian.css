@@ -1,0 +1,249 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+::-moz-scrollbar {
+    display: none;
+}
+
+::-scrollbar {
+    display: none;
+}
+
+html {
+	font-family: Helvetica;
+	font-weight: 100 !important;
+	margin: 0;
+	background-color: black;
+	color: white !important;
+  word-wrap: break-word;
+}
+
+.contact {
+  display: none;
+}
+
+@font-face {
+    font-family: t;
+    src: url(TimesNewRoman.ttf) format("truetype");
+}
+
+.links {
+  font-family: t !important;
+  background-color: transparent;
+  position: fixed;
+  overflow: scroll;
+  right: 0;
+  top: 0;
+  width: 35vw;
+  min-height: 100vh;
+  z-index: 997 !important;
+  text-align: right;
+  font-style: italic;
+  font-weight: bold !important;
+}
+
+.links > section {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 996 !important;
+}
+
+.links > section > iframe {
+  position: fixed;
+  left: -100vw;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 996 !important;
+}
+
+.links > section >h1 {
+  margin-top: 0;
+  top: 0;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.links > section > h1 {
+  position: relative;
+  font-size: 50px !important;
+  white-space:nowrap;
+  -webkit-transform: translateZ(0px);
+  cursor: pointer;
+  z-index: 996 !important;
+}
+
+.links > section > h1:hover {
+  color: #EE327A !important;
+}
+
+
+.close {
+  border-radius: 50%;
+  position: fixed;
+  left: 30px;
+  top: 30px;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  padding: 10px;
+  z-index: 999 !important;
+  cursor: pointer;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.25);
+}
+
+.close:hover {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+a,a:visited,p > a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: #EE327A !important;
+}
+
+.contact > p {
+  position: relative;
+  margin-bottom: -6px !important;
+}
+
+.contact > p:first-child {
+  margin-top: 12px;
+}
+
+.contact > p > a {
+  font-size: 16 !important;
+}
+
+h1 {
+  position: relative;
+	font-weight: 100;
+	font-size: 16;
+	text-align: left;
+	z-index: 999 !important;
+  margin-bottom: 0px;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.info > h1:first-child {
+  font-weight: 500 !important;
+}
+
+.info > h1:first-child:hover {
+  color: #EE327A !important;
+}
+
+
+
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+  overflow-x: hidden;
+  overflow: scroll;
+  /*cursor: url(down.png) 10 20, auto;*/
+}
+
+.info {
+  cursor: pointer;
+	z-index: 998 !important;
+	position: fixed;
+	left: 35px;
+	top: 30px;
+	/*transform:translate(0%,-50%);
+  -webkit-transform:translate(0%,-50%);*/
+}
+
+.images{
+  /*opacity: 0;*/
+	/*border-left: 1px solid #282828;*/
+	position: absolute;
+	width:100vw;
+	right: 0 !important;
+	height: 100vh;
+  z-index: 996;
+}
+
+
+@media screen and (max-width: 736px){
+
+  body {
+    cursor: none;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll !important;
+  }
+
+  .links {
+    width: 50vw;
+    min-height: auto;
+    position: fixed;
+    top: 200px;
+    margin-left: 0;
+    right: -55px !important;
+    font-size: 16px !important;
+    overflow-x: hidden;
+  }
+
+  .links > section > h1 {
+    margin-left: 0 !important;
+    font-size: 20px !important;
+  }
+
+  .links > section > iframe {
+    z-index: 999 !important;
+  }
+
+  .images {
+    height: 100vh;
+    width: 100vw;
+    z-index: 996 !important;
+  }
+
+  .contact {
+    display: inline;
+  }
+
+  .info {
+    top: 10px;
+    left: 20px;
+    pointer-events: none;
+    font-size: 12px !important;
+  }
+
+  .info > a, .info > h1 {
+    color: white !important;
+    font-size: 12px !important;
+  }
+
+  .info > h1 {
+    margin-bottom: 0;
+  }
+
+  .contact > p {
+    position: relative;
+    margin-bottom: 0 !important;
+    font-size: 12px !important;
+  }
+
+  .contact > p > a {
+    font-size: 12px !important;
+  }
